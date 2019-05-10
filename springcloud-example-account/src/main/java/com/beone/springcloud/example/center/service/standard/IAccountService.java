@@ -1,0 +1,14 @@
+package com.beone.springcloud.example.center.service.standard;
+
+import com.beone.springcloud.example.center.pojo.dto.AccountDTO;
+
+/**
+ * 用户业务接口定义
+ *
+ * @author Eugene
+ * 2019-05-07 14:59
+ */
+public interface IAccountService {
+
+    AccountDTO findAccountByUserId(String userId);
+}

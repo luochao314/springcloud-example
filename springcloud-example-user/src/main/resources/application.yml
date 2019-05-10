@@ -1,0 +1,13 @@
+#Spring
+spring:
+  profiles:
+    active: dev
+
+# MyBatisPlus
+mybatisPlus:
+  mapperLocations: classpath:/mybatis/mappers/**/*Mapper.xml
+  typeEnumsPackage: com.beone.springcloud.example.user.enumeration
+  typeAliasesPackage: com.beone.springcloud.exampl.user.pojo.domain
+  global-config:
+    db-config:
+      id-type: uuid
