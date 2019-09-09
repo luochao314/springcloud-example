@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @FeignClient(value = "example-center")
 public interface IAccountAPI {
 
+
     @PostMapping(value = "/accounts/{userId}")
     DataResponseResult<AccountVO> get(@PathVariable("userId") String userId);
 }
